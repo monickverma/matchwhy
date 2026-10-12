@@ -2,7 +2,7 @@
 
 **AI proposes, a human approves.** MatchWhy is a candidate↔job matcher built around human-in-the-loop review. Each score comes with a verbatim quote from the candidate's profile for every requirement in the job description. Unmet requirements are shown in red. Candidates the system is unsure about go to a "Needs human review" queue instead of being ranked silently. Reviewers can Approve or Reject a candidate, or mark a quote as "wrong evidence", and each click updates the requirement weights and the embedding-vs-keyword mix through a small online rule that you can read in full. Outreach drafts are built from the candidate's own quotes, and you can only copy one after a human has approved that candidate. Everything runs in the browser: `all-MiniLM-L6-v2` runs in a Web Worker through transformers.js. There is no server, no API key and no paid service.
 
-**Live demo:** _coming soon_
+**Live demo:** https://matchwhy.vercel.app (the first load downloads about 23 MB of model weights)
 
 ![tests](https://img.shields.io/badge/tests-vitest-6E9F18) ![license](https://img.shields.io/badge/license-MIT-blue)
 
